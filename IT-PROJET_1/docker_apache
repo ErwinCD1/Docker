@@ -1,0 +1,7 @@
+#Options
+From httpd:latest
+#Une fois dossiers creer on se place dedans
+WORKDIR /usr/local/apache2/htdocs
+#Mot clef servant a indiquer au conteneur exposant son port 80 pour que l'on puisse y accéder
+EXPOSE 80
+RUN apt-get update &&  sh /home/apprenant/Bureau/wp.sh 
